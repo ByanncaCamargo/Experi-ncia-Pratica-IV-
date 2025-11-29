@@ -1,4 +1,4 @@
-# Experiência Prática IV – Implementação e Manipulação de Dados (SQL)
+# Implementação e Manipulação de Dados (SQL)
 ## Projeto: Sistema de Agendamentos de Salão de Beleza
 
 Este repositório contém todos os arquivos referentes à implementação do banco de dados do projeto Salão de Beleza, utilizando SQL (DML) para criação, inserção, consulta, atualização e exclusão de dados.
