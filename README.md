@@ -1,50 +1,64 @@
-# Sistema de Agendamentos – Experiência Prática IV
+# Experiência Prática IV – Implementação e Manipulação de Dados (SQL)
+## Projeto: Sistema de Agendamentos de Salão de Beleza
 
-Este projeto implementa um banco de dados relacional completo para um sistema de agendamentos, utilizando **SQLite** e comandos SQL (DDL e DML).
+Este repositório contém todos os arquivos referentes à implementação do banco de dados do projeto Salão de Beleza, utilizando SQL (DML) para criação, inserção, consulta, atualização e exclusão de dados.
 
----
+## Tecnologias Utilizadas
+- SQLite (via DB Fiddle)
+- SQL DDL + DML
+- GitHub para versionamento e entrega
 
-## 📌 1. Estrutura do Banco de Dados
+## Arquivos do Repositório
 
-Tabelas criadas:
+### 1. create_tables.sql
+Contém todos os comandos de criação das tabelas:
+- CLIENTE  
+- PROFISSIONAL  
+- SERVICO  
+- STATUS  
+- AGENDAMENTO  
+Com PK e FK conforme o modelo lógico.
 
-- Cliente
-- Profissional
-- Servico
-- Status
-- Horario
-- Agendamento
+### 2. insert.sql
+Arquivo com todos os INSERT INTO utilizados para popular as tabelas.
 
-O modelo segue o DER desenvolvido na atividade anterior.
+### 3. select.sql
+Consultas SQL utilizando:
+- SELECT
+- WHERE
+- ORDER BY
+- LIMIT
+- JOIN
 
----
+### 4. update_delete.sql
+Arquivo contendo:
+- 3 comandos UPDATE  
+- 3 comandos DELETE  
+Todos com condições coerentes com o mini-mundo.
 
-## 📂 2. Scripts incluídos no repositório
+### 5. /imagens
+Pasta contendo o DER usado na modelagem do banco.
 
-| Arquivo | Descrição |
-|--------|-----------|
-| **01_create_tables.sql** | Criação das tabelas |
-| **02_insert_data.sql** | Inserts para povoar o banco |
-| **03_selects.sql** | Consultas SELECT |
-| **04_updates.sql** | Comandos UPDATE |
-| **05_deletes.sql** | Comandos DELETE |
+## Execução dos Scripts
+Ferramenta utilizada:  
+https://www.db-fiddle.com/
 
----
+Cole os códigos na área de edição do site e clique em “Run”.
 
-## ▶️ Como executar
+## Mini-mundo (Resumo)
+O salão de beleza possui:
+- Clientes que realizam agendamentos
+- Profissionais que atendem
+- Serviços oferecidos
+- Status para cada agendamento
+- Cada agendamento possui data, horário e referência às outras tabelas
 
-1. Acesse **DB Fiddle (SQLite)**  
-2. Copie e cole os scripts na janela SQL  
-3. Execute na ordem:  
-   - Create Tables  
-   - Inserts  
-   - Selects / Update / Delete conforme necessidade  
-
----
-
-## 🔗 Link do DB Fiddle
-(coloque aqui o link do seu banco)
-
----
-
-## 👩‍💻 Professora: Atividade Prática IV – Implementação e Manipulação de Dados
+## Entregas Atendidas
+- CREATE TABLE  
+- INSERT  
+- SELECT  
+- UPDATE  
+- DELETE  
+- README completo  
+- Organização em pastas  
+- Scripts funcionando no DB Fiddle
